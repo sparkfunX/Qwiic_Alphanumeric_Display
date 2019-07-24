@@ -451,7 +451,7 @@
 <pin name="ROW1/A0" x="15.24" y="22.86" visible="pin" length="short" rot="R180"/>
 <pin name="ROW0/A1" x="15.24" y="25.4" visible="pin" length="short" rot="R180"/>
 <pin name="SCL" x="-15.24" y="5.08" visible="pin" length="short"/>
-<pin name="SDA" x="-15.24" y="7.62" visible="pin" length="short"/>
+<pin name="SDA" x="-15.24" y="20.32" visible="pin" length="short"/>
 <pin name="VDD" x="-15.24" y="25.4" visible="pin" length="short" direction="pwr"/>
 <wire x1="-12.7" y1="27.94" x2="-12.7" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-27.94" x2="12.7" y2="-27.94" width="0.254" layer="94"/>
