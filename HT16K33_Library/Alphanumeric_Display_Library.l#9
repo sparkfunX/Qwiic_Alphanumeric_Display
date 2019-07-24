@@ -451,32 +451,32 @@
 <pin name="ROW1/A0" x="15.24" y="22.86" length="short" rot="R180"/>
 <pin name="ROW0/A1" x="15.24" y="25.4" length="short" rot="R180"/>
 <pin name="SCL" x="-15.24" y="5.08" length="short"/>
-<pin name="SDA" x="-15.24" y="17.78" length="short"/>
+<pin name="SDA" x="-15.24" y="20.32" length="short"/>
 <pin name="VDD" x="-15.24" y="25.4" length="short" direction="pwr"/>
 <wire x1="-12.7" y1="27.94" x2="-12.7" y2="-30.48" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-30.48" x2="12.7" y2="-30.48" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-30.48" x2="12.7" y2="27.94" width="0.254" layer="94"/>
 <wire x1="12.7" y1="27.94" x2="-12.7" y2="27.94" width="0.254" layer="94"/>
 <text x="-12.7" y="27.94" size="1.778" layer="95">HT16K33</text>
-<text x="-10.16" y="-33.02" size="1.778" layer="95">&gt;VALUE</text>
+<text x="-12.7" y="-33.02" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 <symbol name="SILSMART_DISPLAY">
-<pin name="DIG_1B" x="-17.78" y="-15.24" visible="pin" length="short" rot="R90"/>
-<pin name="DIG_2B" x="-12.7" y="-15.24" visible="pin" length="short" rot="R90"/>
-<pin name="COM_D" x="-7.62" y="-15.24" visible="pin" length="short" rot="R90"/>
-<pin name="COM_C" x="-2.54" y="-15.24" visible="pin" length="short" rot="R90"/>
-<pin name="COM_G1" x="2.54" y="-15.24" visible="pin" length="short" rot="R90"/>
-<pin name="COM_E" x="7.62" y="-15.24" visible="pin" length="short" rot="R90"/>
-<pin name="DIG_DP" x="12.7" y="-15.24" visible="pin" length="short" rot="R90"/>
-<pin name="DIG_4A" x="17.78" y="-15.24" visible="pin" length="short" rot="R90"/>
-<pin name="DIG_4B" x="17.78" y="12.7" visible="pin" length="short" rot="R270"/>
-<pin name="DIG_3B" x="12.7" y="12.7" visible="pin" length="short" rot="R270"/>
-<pin name="DIG_3A" x="7.62" y="12.7" visible="pin" length="short" rot="R270"/>
-<pin name="COM_F" x="2.54" y="12.7" visible="pin" length="short" rot="R270"/>
-<pin name="COM_B" x="-2.54" y="12.7" visible="pin" length="short" rot="R270"/>
-<pin name="COM_A" x="-7.62" y="12.7" visible="pin" length="short" rot="R270"/>
-<pin name="DIG_2A" x="-12.7" y="12.7" visible="pin" length="short" rot="R270"/>
-<pin name="DIG_1A" x="-17.78" y="12.7" visible="pin" length="short" rot="R270"/>
+<pin name="DIG_1B" x="-17.78" y="-15.24" visible="pad" length="short" rot="R90"/>
+<pin name="DIG_2B" x="-12.7" y="-15.24" visible="pad" length="short" rot="R90"/>
+<pin name="COM_D" x="-7.62" y="-15.24" visible="pad" length="short" rot="R90"/>
+<pin name="COM_C" x="-2.54" y="-15.24" visible="pad" length="short" rot="R90"/>
+<pin name="COM_G1" x="2.54" y="-15.24" visible="pad" length="short" rot="R90"/>
+<pin name="COM_E" x="7.62" y="-15.24" visible="pad" length="short" rot="R90"/>
+<pin name="DIG_DP" x="12.7" y="-15.24" visible="pad" length="short" rot="R90"/>
+<pin name="DIG_4A" x="17.78" y="-15.24" visible="pad" length="short" rot="R90"/>
+<pin name="DIG_4B" x="17.78" y="12.7" visible="pad" length="short" rot="R270"/>
+<pin name="DIG_3B" x="12.7" y="12.7" visible="pad" length="short" rot="R270"/>
+<pin name="DIG_3A" x="7.62" y="12.7" visible="pad" length="short" rot="R270"/>
+<pin name="COM_F" x="2.54" y="12.7" visible="pad" length="short" rot="R270"/>
+<pin name="COM_B" x="-2.54" y="12.7" visible="pad" length="short" rot="R270"/>
+<pin name="COM_A" x="-7.62" y="12.7" visible="pad" length="short" rot="R270"/>
+<pin name="DIG_2A" x="-12.7" y="12.7" visible="pad" length="short" rot="R270"/>
+<pin name="DIG_1A" x="-17.78" y="12.7" visible="pad" length="short" rot="R270"/>
 <wire x1="-27.94" y1="10.16" x2="27.94" y2="10.16" width="0.254" layer="94"/>
 <wire x1="27.94" y1="10.16" x2="27.94" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="27.94" y1="-12.7" x2="-27.94" y2="-12.7" width="0.254" layer="94"/>
