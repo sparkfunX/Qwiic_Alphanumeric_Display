@@ -39,7 +39,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -156,6 +156,7 @@
 <text x="25.4" y="-8.89" size="1.651" layer="51" ratio="15">Madison Chodikov</text>
 <text x="33.02" y="26.543" size="0.6096" layer="125" font="vector" ratio="20" align="bottom-center">I2C</text>
 <text x="20.3700125" y="31.53999375" size="1.778" layer="126" font="vector" rot="MR0">U1</text>
+<rectangle x1="12.954" y1="10.033" x2="13.716" y2="10.668" layer="51"/>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">

@@ -3,7 +3,7 @@
 <eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
@@ -3618,8 +3618,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="SparkFun-Capacitors" package="0603" value="0.1uF" x="29.21" y="26.924" smashed="yes" rot="R180">
-<attribute name="PROD_ID" value="CAP-00810" x="-11.43" y="91.694" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C1" library="SparkFun-Capacitors" package="0603" value="0.1uF" x="8.636" y="11.43" smashed="yes" rot="R270">
+<attribute name="PROD_ID" value="CAP-00810" x="-56.134" y="-29.21" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="D1" library="SparkFun-LED" package="LED-0603" value="RED" x="8.89" y="3.175" smashed="yes">
 <attribute name="PROD_ID" value="DIO-00819" x="64.77" y="-61.595" size="1.778" layer="27" display="off"/>
@@ -3640,7 +3640,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </element>
 <element name="JP1" library="SparkFun" package="STAND-OFF" value="STAND-OFF" x="2.54" y="2.54" smashed="yes" rot="MR0"/>
 <element name="JP8" library="SparkFun" package="STAND-OFF" value="STAND-OFF" x="38.1" y="27.94" smashed="yes"/>
-<element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-MINI" value="OSHW-LOGOMINI" x="6.35" y="10.16" smashed="yes"/>
+<element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-MINI" value="OSHW-LOGOMINI" x="35.56" y="11.43" smashed="yes"/>
 <element name="R1" library="SparkFun-Resistors" package="0603" value="1k" x="8.89" y="1.905" smashed="yes">
 <attribute name="PROD_ID" value="RES-07856" x="53.34" y="-62.865" size="1.778" layer="27" display="off"/>
 </element>
@@ -3665,7 +3665,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$9" library="buzzard_labels" package="SDA2" value="" x="19.05" y="1.778" smashed="yes" rot="MR90"/>
 <element name="U$10" library="Labels" package="I_SUPER2_C-()-04" value="" x="31.115" y="27.432" smashed="yes"/>
 <element name="U$11" library="Labels" package="QWIIC_COPYRIGHT_MEDIUM" value="" x="35.56" y="15.24" smashed="yes"/>
-<element name="U$12" library="SparkX" package="SPARKX-MEDIUM" value="" x="6.35" y="15.24" smashed="yes"/>
+<element name="U$12" library="SparkX" package="SPARKX-MEDIUM" value="" x="5.08" y="15.24" smashed="yes"/>
 <element name="U$14" library="SparkX" package="SPARKX-MEDIUM" value="" x="6.858" y="26.162" smashed="yes" rot="MR0"/>
 <element name="U$15" library="buzzard_labels (4)" package="QWIIC_ALPHANUMERIC0" value="" x="7.62" y="27.94" smashed="yes"/>
 <element name="U$16" library="buzzard_labels (4)" package="DISPLAY1" value="" x="12.7" y="25.908" smashed="yes"/>
@@ -3705,8 +3705,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="11.2268" y1="24.7142" x2="8.771" y2="27.17" width="0.3048" layer="1"/>
 <wire x1="11.303" y1="24.7142" x2="11.2268" y2="24.7142" width="0.3048" layer="1"/>
 <via x="11.303" y="24.7142" extent="1-16" drill="0.381"/>
-<wire x1="30.06" y1="26.924" x2="33.02" y2="25.4" width="0" layer="19" extent="1-1"/>
-<wire x1="13.335" y1="19.6215" x2="30.06" y2="26.924" width="0" layer="19" extent="1-1"/>
+<wire x1="8.636" y1="12.28" x2="33.02" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="13.335" y1="19.6215" x2="8.636" y2="12.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R1" pad="1"/>

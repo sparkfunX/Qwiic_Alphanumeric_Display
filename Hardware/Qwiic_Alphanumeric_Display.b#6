@@ -3644,11 +3644,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="R1" library="SparkFun-Resistors" package="0603" value="1k" x="8.89" y="1.905" smashed="yes">
 <attribute name="PROD_ID" value="RES-07856" x="53.34" y="-62.865" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R4" library="SparkFun-Resistors" package="0603" value="2.2k" x="29.21" y="23.876" smashed="yes">
-<attribute name="PROD_ID" value="RES-08272" x="77.47" y="-40.894" size="1.778" layer="27" display="off"/>
+<element name="R4" library="SparkFun-Resistors" package="0603" value="2.2k" x="29.21" y="24.638" smashed="yes">
+<attribute name="PROD_ID" value="RES-08272" x="77.47" y="-40.132" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R5" library="SparkFun-Resistors" package="0603" value="2.2k" x="29.21" y="25.4" smashed="yes">
-<attribute name="PROD_ID" value="RES-08272" x="81.28" y="-39.37" size="1.778" layer="27" display="off"/>
+<element name="R5" library="SparkFun-Resistors" package="0603" value="2.2k" x="29.21" y="26.162" smashed="yes">
+<attribute name="PROD_ID" value="RES-08272" x="81.28" y="-38.608" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U1" library="Alphanumeric_Display_Library" package="SILSMART_DISPLAY" value="" x="20.32" y="15.24" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="20.42" y="13.19" size="1.778" layer="28" rot="MR0"/>
@@ -3732,7 +3732,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="40.64" y="30.48"/>
 <vertex x="40.64" y="0"/>
 </polygon>
-<via x="26.67" y="26.67" extent="1-16" drill="0.381"/>
+<via x="27.94" y="29.21" extent="1-16" drill="0.381"/>
 <polygon width="0.2032" layer="16" isolate="0.3048">
 <vertex x="0" y="0"/>
 <vertex x="0" y="30.48"/>
@@ -3764,9 +3764,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="17.788" y1="4.31" x2="17.78" y2="4.318" width="0.2032" layer="1"/>
 <wire x1="19.05" y1="1.27" x2="19.05" y2="4.31" width="0.2032" layer="1"/>
 <wire x1="5.08" y1="26.17" x2="6.977" y2="26.17" width="0.2032" layer="1"/>
-<wire x1="6.977" y1="26.17" x2="9.271" y2="23.876" width="0.2032" layer="1"/>
+<wire x1="6.977" y1="26.17" x2="8.509" y2="24.638" width="0.2032" layer="1"/>
+<wire x1="8.509" y1="24.638" x2="9.271" y2="23.876" width="0.2032" layer="1"/>
 <wire x1="12.319" y1="18.542" x2="9.271" y2="21.59" width="0.2032" layer="1"/>
-<wire x1="28.36" y1="23.876" x2="9.271" y2="23.876" width="0.2032" layer="1"/>
+<wire x1="28.36" y1="24.638" x2="8.509" y2="24.638" width="0.2032" layer="1"/>
 <wire x1="14.6177" y1="18.1737" x2="14.605" y2="18.161" width="0.254" layer="1"/>
 <wire x1="9.271" y1="21.59" x2="9.271" y2="23.876" width="0.2032" layer="1"/>
 </signal>
@@ -3778,7 +3779,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="R5" pad="1"/>
 <wire x1="15.875" y1="10.668" x2="16.51" y2="10.033" width="0.2032" layer="16"/>
 <wire x1="15.875" y1="17.399" x2="15.875" y2="10.668" width="0.2032" layer="16"/>
-<wire x1="28.36" y1="25.4" x2="22.225" y2="25.4" width="0.2032" layer="1"/>
+<wire x1="28.36" y1="26.162" x2="22.987" y2="26.162" width="0.2032" layer="1"/>
+<wire x1="22.987" y1="26.162" x2="22.225" y2="25.4" width="0.2032" layer="1"/>
 <via x="22.225" y="25.4" extent="1-16" drill="0.381"/>
 <wire x1="19.05" y1="19.685" x2="19.05" y2="22.225" width="0.2032" layer="16"/>
 <wire x1="22.225" y1="25.4" x2="19.05" y2="22.225" width="0.2032" layer="16"/>
@@ -3922,14 +3924,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="N$4">
 <contactref element="R5" pad="2"/>
 <contactref element="I2C" pad="1"/>
-<wire x1="32.004" y1="25.4" x2="30.06" y2="25.4" width="0.2032" layer="1"/>
+<wire x1="32.004" y1="25.4" x2="31.242" y2="26.162" width="0.2032" layer="1"/>
+<wire x1="31.242" y1="26.162" x2="30.06" y2="26.162" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="R4" pad="2"/>
 <contactref element="I2C" pad="3"/>
-<wire x1="33.401" y1="23.876" x2="34.036" y2="24.511" width="0.2032" layer="1"/>
-<wire x1="34.036" y1="24.511" x2="34.036" y2="25.4" width="0.2032" layer="1"/>
-<wire x1="30.06" y1="23.876" x2="33.401" y2="23.876" width="0.2032" layer="1"/>
+<wire x1="30.314" y1="23.749" x2="33.02" y2="23.749" width="0.2032" layer="1"/>
+<wire x1="30.314" y1="23.749" x2="30.06" y2="24.003" width="0.2032" layer="1"/>
+<wire x1="30.06" y1="24.638" x2="30.06" y2="24.003" width="0.2032" layer="1"/>
+<wire x1="33.02" y1="23.749" x2="33.655" y2="23.749" width="0.2032" layer="1"/>
+<wire x1="33.655" y1="23.749" x2="34.036" y2="24.13" width="0.2032" layer="1"/>
+<wire x1="34.036" y1="24.13" x2="34.036" y2="25.4" width="0.2032" layer="1"/>
 </signal>
 <signal name="COM_G1">
 <contactref element="U1" pad="5"/>
