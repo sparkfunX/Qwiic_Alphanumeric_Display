@@ -4733,6 +4733,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-7.75" y="5.6" size="1.778" layer="25">&gt;NAME</text>
 <text x="-7.7" y="-7.4" size="1.778" layer="27">&gt;VALUE</text>
 </package>
+<package name="MOUNTING_HOLE_M2-0.4X6">
+<circle x="0" y="0" radius="2.25" width="0.03" layer="51"/>
+<wire x1="1.125" y1="-4" x2="1.125" y2="4" width="0.03" layer="51"/>
+<wire x1="-1.125" y1="4" x2="-1.125" y2="-4" width="0.03" layer="51"/>
+<circle x="0" y="-4" radius="1.125" width="0.03" layer="51"/>
+<circle x="0" y="4" radius="1.125" width="0.03" layer="51"/>
+<wire x1="1.15" y1="1.95" x2="1.15" y2="-1.95" width="0.2032" layer="20" curve="-118.151107"/>
+<wire x1="1.15" y1="1.95" x2="1.15" y2="4" width="0.2032" layer="20"/>
+<wire x1="1.15" y1="4" x2="-1.15" y2="4" width="0.2032" layer="20" curve="180"/>
+<wire x1="-1.15" y1="4" x2="-1.15" y2="1.95" width="0.2032" layer="20"/>
+<wire x1="-1.15" y1="-1.95" x2="-1.15" y2="1.95" width="0.2032" layer="20" curve="-118.151107"/>
+<wire x1="-1.15" y1="-1.95" x2="-1.15" y2="-4" width="0.2032" layer="20"/>
+<wire x1="-1.15" y1="-4" x2="1.15" y2="-4" width="0.2032" layer="20" curve="180"/>
+<wire x1="1.15" y1="-4" x2="1.15" y2="-1.95" width="0.2032" layer="20"/>
+<text x="0" y="0" size="0.5" layer="20" align="center">Route
+Out</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SILSMART_DISPLAY">
@@ -5098,6 +5115,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-12.7" y="27.94" size="1.778" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-30.48" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="MOUNTING_HOLE_M2-0.4X6">
+<wire x1="0.762" y1="1.778" x2="0.762" y2="-1.778" width="0.254" layer="94" curve="-133.602819"/>
+<wire x1="0.762" y1="1.778" x2="0.762" y2="3.302" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="3.302" x2="-0.762" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0.762" y1="3.302" x2="-0.762" y2="3.302" width="0.254" layer="94" curve="180"/>
+<wire x1="-0.762" y1="-1.778" x2="-0.762" y2="1.778" width="0.254" layer="94" curve="-133.602819"/>
+<wire x1="-0.762" y1="-1.778" x2="-0.762" y2="-3.302" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-3.302" x2="0.762" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-3.302" x2="0.762" y2="-3.302" width="0.254" layer="94" curve="180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SILSMART_DISPLAY" prefix="U" uservalue="yes">
@@ -5165,6 +5192,18 @@ LED Controller Driver with Keyscan</description>
 <connect gate="G$1" pin="VDD" pad="24"/>
 <connect gate="G$1" pin="VSS" pad="1"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOUNTING_HOLE_M2-0.4X6">
+<gates>
+<gate name="G$1" symbol="MOUNTING_HOLE_M2-0.4X6" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MOUNTING_HOLE_M2-0.4X6">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7103,6 +7142,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="H1" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="H2" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="IC1" library="Alphanumeric_Display_Library" deviceset="HT16K33" device=""/>
+<part name="U$18" library="Alphanumeric_Display_Library" deviceset="MOUNTING_HOLE_M2-0.4X6" device=""/>
+<part name="U$19" library="Alphanumeric_Display_Library" deviceset="MOUNTING_HOLE_M2-0.4X6" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7112,6 +7153,36 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="50.8" y="58.42" size="1.778" layer="97" font="vector">I2C Connections</text>
 <text x="86.36" y="152.4" size="1.778" layer="97" font="vector" rot="R180">Clear Jumper to remove 
 I2C Pull-ups from bus</text>
+<text x="187.96" y="157.48" size="1.778" layer="97">A1     A0    Address</text>
+<text x="187.96" y="152.4" size="2.032" layer="97">0      0     0x70</text>
+<text x="187.96" y="147.32" size="2.032" layer="97">0      1     0x71</text>
+<text x="187.96" y="142.24" size="2.032" layer="97">1      0     0x72</text>
+<text x="187.96" y="137.16" size="2.032" layer="97">1      1     0x73</text>
+<wire x1="185.42" y1="160.02" x2="185.42" y2="156.21" width="0.2032" layer="97"/>
+<wire x1="185.42" y1="156.21" x2="185.42" y2="151.13" width="0.2032" layer="97"/>
+<wire x1="185.42" y1="151.13" x2="185.42" y2="146.05" width="0.2032" layer="97"/>
+<wire x1="185.42" y1="146.05" x2="185.42" y2="140.97" width="0.2032" layer="97"/>
+<wire x1="185.42" y1="140.97" x2="185.42" y2="135.89" width="0.2032" layer="97"/>
+<wire x1="185.42" y1="160.02" x2="192.532" y2="160.02" width="0.2032" layer="97"/>
+<wire x1="192.532" y1="160.02" x2="199.898" y2="160.02" width="0.2032" layer="97"/>
+<wire x1="199.898" y1="160.02" x2="226.06" y2="160.02" width="0.2032" layer="97"/>
+<wire x1="226.06" y1="160.02" x2="226.06" y2="156.21" width="0.2032" layer="97"/>
+<wire x1="226.06" y1="156.21" x2="226.06" y2="151.13" width="0.2032" layer="97"/>
+<wire x1="226.06" y1="151.13" x2="226.06" y2="146.05" width="0.2032" layer="97"/>
+<wire x1="226.06" y1="146.05" x2="226.06" y2="140.97" width="0.2032" layer="97"/>
+<wire x1="226.06" y1="140.97" x2="226.06" y2="135.89" width="0.2032" layer="97"/>
+<wire x1="185.42" y1="156.21" x2="226.06" y2="156.21" width="0.2032" layer="97"/>
+<wire x1="185.42" y1="151.13" x2="226.06" y2="151.13" width="0.2032" layer="97"/>
+<wire x1="185.42" y1="146.05" x2="226.06" y2="146.05" width="0.2032" layer="97"/>
+<wire x1="185.42" y1="140.97" x2="226.06" y2="140.97" width="0.2032" layer="97"/>
+<wire x1="185.42" y1="135.89" x2="199.898" y2="135.89" width="0.2032" layer="97"/>
+<text x="185.42" y="162.56" size="1.9304" layer="97">Default address: 0x70
+When no jumpers are closed
+Floating pin (A0/A1) = 0
+Connected to AD = 1</text>
+<wire x1="199.898" y1="135.89" x2="226.06" y2="135.89" width="0.2032" layer="97"/>
+<wire x1="192.532" y1="160.02" x2="192.532" y2="135.636" width="0.2032" layer="97"/>
+<wire x1="199.898" y1="160.02" x2="199.898" y2="135.89" width="0.2032" layer="97"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -7224,9 +7295,9 @@ I2C Pull-ups from bus</text>
 <instance part="FD2" gate="G$1" x="231.14" y="30.48" smashed="yes"/>
 <instance part="FD3" gate="G$1" x="231.14" y="27.94" smashed="yes"/>
 <instance part="FD4" gate="G$1" x="228.6" y="27.94" smashed="yes"/>
-<instance part="U1" gate="G$1" x="200.66" y="134.62" smashed="yes">
-<attribute name="NAME" x="172.72" y="121.92" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="231.14" y="121.92" size="1.778" layer="96" rot="R90"/>
+<instance part="U1" gate="G$1" x="205.74" y="99.06" smashed="yes">
+<attribute name="NAME" x="177.8" y="86.36" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="236.22" y="86.36" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="H1" gate="G$1" x="243.84" y="30.48" smashed="yes"/>
 <instance part="H2" gate="G$1" x="243.84" y="27.94" smashed="yes"/>
@@ -7234,6 +7305,8 @@ I2C Pull-ups from bus</text>
 <attribute name="NAME" x="104.14" y="149.86" size="1.778" layer="95"/>
 <attribute name="VALUE" x="104.14" y="91.44" size="1.778" layer="96"/>
 </instance>
+<instance part="U$18" gate="G$1" x="223.52" y="30.48" smashed="yes"/>
+<instance part="U$19" gate="G$1" x="218.44" y="30.48" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -7376,8 +7449,8 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="DIG_1A" class="0">
 <segment>
-<wire x1="182.88" y1="147.32" x2="182.88" y2="149.86" width="0.1524" layer="91"/>
-<label x="182.88" y="149.86" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="187.96" y1="111.76" x2="187.96" y2="114.3" width="0.1524" layer="91"/>
+<label x="187.96" y="114.3" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="DIG_1A"/>
 </segment>
 <segment>
@@ -7392,8 +7465,8 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="DIG_1B" class="0">
 <segment>
-<wire x1="182.88" y1="119.38" x2="182.88" y2="116.84" width="0.1524" layer="91"/>
-<label x="182.88" y="116.84" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="187.96" y1="83.82" x2="187.96" y2="81.28" width="0.1524" layer="91"/>
+<label x="187.96" y="81.28" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="DIG_1B"/>
 </segment>
 <segment>
@@ -7404,8 +7477,8 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="DIG_2A" class="0">
 <segment>
-<wire x1="187.96" y1="147.32" x2="187.96" y2="149.86" width="0.1524" layer="91"/>
-<label x="187.96" y="149.86" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="193.04" y1="111.76" x2="193.04" y2="114.3" width="0.1524" layer="91"/>
+<label x="193.04" y="114.3" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="DIG_2A"/>
 </segment>
 <segment>
@@ -7420,8 +7493,8 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="DIG_2B" class="0">
 <segment>
-<wire x1="187.96" y1="119.38" x2="187.96" y2="116.84" width="0.1524" layer="91"/>
-<label x="187.96" y="116.84" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="193.04" y1="83.82" x2="193.04" y2="81.28" width="0.1524" layer="91"/>
+<label x="193.04" y="81.28" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="DIG_2B"/>
 </segment>
 <segment>
@@ -7432,8 +7505,8 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="DIG_3A" class="0">
 <segment>
-<wire x1="208.28" y1="147.32" x2="208.28" y2="149.86" width="0.1524" layer="91"/>
-<label x="208.28" y="149.86" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="213.36" y1="111.76" x2="213.36" y2="114.3" width="0.1524" layer="91"/>
+<label x="213.36" y="114.3" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="DIG_3A"/>
 </segment>
 <segment>
@@ -7444,8 +7517,8 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="DIG_3B" class="0">
 <segment>
-<wire x1="213.36" y1="147.32" x2="213.36" y2="149.86" width="0.1524" layer="91"/>
-<label x="213.36" y="149.86" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="218.44" y1="111.76" x2="218.44" y2="114.3" width="0.1524" layer="91"/>
+<label x="218.44" y="114.3" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="DIG_3B"/>
 </segment>
 <segment>
@@ -7456,8 +7529,8 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="DIG_4B" class="0">
 <segment>
-<wire x1="218.44" y1="147.32" x2="218.44" y2="149.86" width="0.1524" layer="91"/>
-<label x="218.44" y="149.86" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="223.52" y1="111.76" x2="223.52" y2="114.3" width="0.1524" layer="91"/>
+<label x="223.52" y="114.3" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="DIG_4B"/>
 </segment>
 <segment>
@@ -7468,8 +7541,8 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="DIG_DP" class="0">
 <segment>
-<wire x1="213.36" y1="119.38" x2="213.36" y2="116.84" width="0.1524" layer="91"/>
-<label x="213.36" y="116.84" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="218.44" y1="83.82" x2="218.44" y2="81.28" width="0.1524" layer="91"/>
+<label x="218.44" y="81.28" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="DIG_DP"/>
 </segment>
 <segment>
@@ -7480,8 +7553,8 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="COM_A" class="0">
 <segment>
-<wire x1="193.04" y1="147.32" x2="193.04" y2="149.86" width="0.1524" layer="91"/>
-<label x="193.04" y="149.86" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="198.12" y1="111.76" x2="198.12" y2="114.3" width="0.1524" layer="91"/>
+<label x="198.12" y="114.3" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="COM_A"/>
 </segment>
 <segment>
@@ -7498,8 +7571,8 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="COM_B" class="0">
 <segment>
-<wire x1="198.12" y1="147.32" x2="198.12" y2="149.86" width="0.1524" layer="91"/>
-<label x="198.12" y="149.86" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="203.2" y1="111.76" x2="203.2" y2="114.3" width="0.1524" layer="91"/>
+<label x="203.2" y="114.3" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="COM_B"/>
 </segment>
 <segment>
@@ -7510,8 +7583,8 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="COM_C" class="0">
 <segment>
-<wire x1="198.12" y1="119.38" x2="198.12" y2="116.84" width="0.1524" layer="91"/>
-<label x="198.12" y="116.84" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="203.2" y1="83.82" x2="203.2" y2="81.28" width="0.1524" layer="91"/>
+<label x="203.2" y="81.28" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="COM_C"/>
 </segment>
 <segment>
@@ -7522,8 +7595,8 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="COM_D" class="0">
 <segment>
-<wire x1="193.04" y1="119.38" x2="193.04" y2="116.84" width="0.1524" layer="91"/>
-<label x="193.04" y="116.84" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="198.12" y1="83.82" x2="198.12" y2="81.28" width="0.1524" layer="91"/>
+<label x="198.12" y="81.28" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="COM_D"/>
 </segment>
 <segment>
@@ -7534,8 +7607,8 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="COM_E" class="0">
 <segment>
-<wire x1="208.28" y1="119.38" x2="208.28" y2="116.84" width="0.1524" layer="91"/>
-<label x="208.28" y="116.84" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="213.36" y1="83.82" x2="213.36" y2="81.28" width="0.1524" layer="91"/>
+<label x="213.36" y="81.28" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="COM_E"/>
 </segment>
 <segment>
@@ -7546,8 +7619,8 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="COM_F" class="0">
 <segment>
-<wire x1="203.2" y1="147.32" x2="203.2" y2="149.86" width="0.1524" layer="91"/>
-<label x="203.2" y="149.86" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="208.28" y1="111.76" x2="208.28" y2="114.3" width="0.1524" layer="91"/>
+<label x="208.28" y="114.3" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="COM_F"/>
 </segment>
 <segment>
@@ -7574,8 +7647,8 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="DIG_4A" class="0">
 <segment>
-<wire x1="218.44" y1="119.38" x2="218.44" y2="116.84" width="0.1524" layer="91"/>
-<label x="218.44" y="116.84" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="223.52" y1="83.82" x2="223.52" y2="81.28" width="0.1524" layer="91"/>
+<label x="223.52" y="81.28" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="DIG_4A"/>
 </segment>
 <segment>
@@ -7586,8 +7659,8 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="COM_G" class="0">
 <segment>
-<wire x1="203.2" y1="119.38" x2="203.2" y2="116.84" width="0.1524" layer="91"/>
-<label x="203.2" y="116.84" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="208.28" y1="83.82" x2="208.28" y2="81.28" width="0.1524" layer="91"/>
+<label x="208.28" y="81.28" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="COM_G1"/>
 </segment>
 <segment>

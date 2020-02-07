@@ -625,6 +625,28 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="0.8866" y="-0.23263125"/>
 </polygon>
 </package>
+<package name="FIDUCIAL-1X2">
+<description>&lt;h3&gt;Fiducial - Circle, 1mm&lt;/h3&gt;
+&lt;p&gt;Point-of-reference for pick-and-place machines and other optical instruments.&lt;/p&gt;
+&lt;p&gt;Devices using:
+&lt;ul&gt;&lt;li&gt;FIDUCIAL&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="FIDUCIAL-MICRO">
+<description>&lt;h3&gt;Fiducial - Circle, 0.25in&lt;/h3&gt;
+&lt;p&gt;Point-of-reference for pick-and-place machines and other optical instruments.&lt;/p&gt;
+&lt;p&gt;Devices using:
+&lt;ul&gt;&lt;li&gt;FIDUCIAL&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="1" x="0" y="0" dx="0.635" dy="0.635" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="FIDUCIAL-0.2MM">
+<description>&lt;h3&gt;Fiducial - Circle, 0.2mm&lt;/h3&gt;
+&lt;p&gt;Point-of-reference for pick-and-place machines and other optical instruments.&lt;/p&gt;
+&lt;p&gt;Devices using:
+&lt;ul&gt;&lt;li&gt;FIDUCIAL&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="1" x="0" y="0" dx="0.2" dy="0.2" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0" y="0" radius="0.06" width="0.1524" layer="29"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FRAME-LETTER">
@@ -4232,6 +4254,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="0.6834" y="-1.65"/>
 </polygon>
 </symbol>
+<symbol name="FIDUCIAL">
+<description>&lt;h3&gt;Fiducial&lt;/h3&gt;
+&lt;p&gt;Point-of-reference for pick-and-place machines and other optical instruments.&lt;/p&gt;
+&lt;p&gt;Devices using:
+&lt;ul&gt;&lt;li&gt;FIDUCIAL&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRAME-LETTER" prefix="FRAME">
@@ -4303,6 +4334,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </technologies>
 </device>
 <device name="NO_SILK" package="DUMMY">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL" prefix="FD">
+<description>&lt;h3&gt;Fiducial Alignment Points&lt;/h3&gt;
+&lt;p&gt;Point-of-reference for pick-and-place machines and other optical instruments.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1X2" package="FIDUCIAL-1X2">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="UFIDUCIAL" package="FIDUCIAL-MICRO">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0.2MM" package="FIDUCIAL-0.2MM">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -6925,8 +6980,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
-<part name="J1" library="SparkFun-Connectors" deviceset="I2C_STANDARD" device="QWIIC" value="PTH"/>
-<part name="J2" library="SparkFun-Connectors" deviceset="I2C_STANDARD" device="QWIIC" value="Qwiic Right Angle"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="I2C_STANDARD" device="_NO_SILK"/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="R1" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
@@ -6935,12 +6988,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="MINI"/>
 <part name="JP8" library="SparkFun" deviceset="STAND-OFF" device=""/>
 <part name="JP1" library="SparkFun" deviceset="STAND-OFF" device=""/>
@@ -6964,6 +7013,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="FD1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="FD2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="FD3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="FD4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 </parts>
 <sheets>
 <sheet>
@@ -6983,15 +7036,9 @@ I2C Pull-ups from bus</text>
 <attribute name="DESIGNER" x="170.434" y="11.176" size="2.7432" layer="94" font="vector"/>
 <attribute name="REV" x="236.22" y="6.604" size="2.7432" layer="94" font="vector"/>
 </instance>
-<instance part="J1" gate="G$1" x="43.18" y="40.64" smashed="yes" rot="MR0">
-<attribute name="NAME" x="48.26" y="48.514" size="1.778" layer="95" font="vector" rot="MR0"/>
-</instance>
-<instance part="J2" gate="G$1" x="43.18" y="15.24" smashed="yes" rot="MR0">
-<attribute name="NAME" x="48.26" y="23.114" size="1.778" layer="95" font="vector" rot="MR0"/>
-</instance>
-<instance part="J3" gate="G$1" x="88.9" y="40.64" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="93.98" y="35.306" size="1.778" layer="96" font="vector" rot="MR0" align="top-left"/>
-<attribute name="NAME" x="93.98" y="48.514" size="1.778" layer="95" font="vector" rot="MR0"/>
+<instance part="J3" gate="G$1" x="127" y="30.48" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="132.08" y="25.146" size="1.778" layer="96" font="vector" rot="MR0" align="top-left"/>
+<attribute name="NAME" x="132.08" y="38.354" size="1.778" layer="95" font="vector" rot="MR0"/>
 </instance>
 <instance part="SUPPLY1" gate="G$1" x="15.24" y="172.72" smashed="yes">
 <attribute name="VALUE" x="15.24" y="175.514" size="1.778" layer="96" align="bottom-center"/>
@@ -7017,23 +7064,11 @@ I2C Pull-ups from bus</text>
 <instance part="SUPPLY2" gate="G$1" x="30.48" y="165.1" smashed="yes">
 <attribute name="VALUE" x="30.48" y="167.894" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY3" gate="G$1" x="33.02" y="48.26" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="33.02" y="51.054" size="1.778" layer="96" rot="MR0" align="bottom-center"/>
+<instance part="SUPPLY4" gate="G$1" x="116.84" y="38.1" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="116.84" y="40.894" size="1.778" layer="96" rot="MR0" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY4" gate="G$1" x="78.74" y="48.26" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="78.74" y="51.054" size="1.778" layer="96" rot="MR0" align="bottom-center"/>
-</instance>
-<instance part="SUPPLY5" gate="G$1" x="33.02" y="22.86" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="33.02" y="25.654" size="1.778" layer="96" rot="MR0" align="bottom-center"/>
-</instance>
-<instance part="GND3" gate="1" x="33.02" y="33.02" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="33.02" y="32.766" size="1.778" layer="96" rot="MR0" align="top-center"/>
-</instance>
-<instance part="GND4" gate="1" x="78.74" y="33.02" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="78.74" y="32.766" size="1.778" layer="96" rot="MR0" align="top-center"/>
-</instance>
-<instance part="GND5" gate="1" x="33.02" y="7.62" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="33.02" y="7.366" size="1.778" layer="96" rot="MR0" align="top-center"/>
+<instance part="GND4" gate="1" x="116.84" y="22.86" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="116.84" y="22.606" size="1.778" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="LOGO1" gate="G$1" x="228.6" y="45.72" smashed="yes"/>
 <instance part="JP8" gate="G$1" x="246.38" y="30.48" smashed="yes"/>
@@ -7087,26 +7122,30 @@ I2C Pull-ups from bus</text>
 <instance part="3V3" gate="G$1" x="15.24" y="165.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="12.7" y="162.56" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
-<instance part="J4" gate="G$1" x="81.28" y="15.24" smashed="yes">
-<attribute name="VALUE" x="76.2" y="4.826" size="1.778" layer="96" font="vector" align="top-left"/>
-<attribute name="NAME" x="76.2" y="23.114" size="1.778" layer="95" font="vector"/>
+<instance part="J4" gate="G$1" x="25.4" y="30.48" smashed="yes">
+<attribute name="VALUE" x="20.32" y="20.066" size="1.778" layer="96" font="vector" align="top-left"/>
+<attribute name="NAME" x="20.32" y="38.354" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="J5" gate="G$1" x="119.38" y="15.24" smashed="yes">
-<attribute name="VALUE" x="114.3" y="4.826" size="1.778" layer="96" font="vector" align="top-left"/>
-<attribute name="NAME" x="114.3" y="23.114" size="1.778" layer="95" font="vector"/>
+<instance part="J5" gate="G$1" x="63.5" y="30.48" smashed="yes">
+<attribute name="VALUE" x="58.42" y="20.066" size="1.778" layer="96" font="vector" align="top-left"/>
+<attribute name="NAME" x="58.42" y="38.354" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="GND7" gate="1" x="91.44" y="7.62" smashed="yes">
-<attribute name="VALUE" x="91.44" y="7.366" size="1.778" layer="96" align="top-center"/>
+<instance part="GND7" gate="1" x="35.56" y="22.86" smashed="yes">
+<attribute name="VALUE" x="35.56" y="22.606" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="GND8" gate="1" x="129.54" y="7.62" smashed="yes">
-<attribute name="VALUE" x="129.54" y="7.366" size="1.778" layer="96" align="top-center"/>
+<instance part="GND8" gate="1" x="73.66" y="22.86" smashed="yes">
+<attribute name="VALUE" x="73.66" y="22.606" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY8" gate="G$1" x="129.54" y="22.86" smashed="yes">
-<attribute name="VALUE" x="129.54" y="25.654" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY8" gate="G$1" x="73.66" y="38.1" smashed="yes">
+<attribute name="VALUE" x="73.66" y="40.894" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY7" gate="G$1" x="91.44" y="22.86" smashed="yes">
-<attribute name="VALUE" x="91.44" y="25.654" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY7" gate="G$1" x="35.56" y="38.1" smashed="yes">
+<attribute name="VALUE" x="35.56" y="40.894" size="1.778" layer="96" align="bottom-center"/>
 </instance>
+<instance part="FD1" gate="G$1" x="228.6" y="30.48" smashed="yes"/>
+<instance part="FD2" gate="G$1" x="231.14" y="30.48" smashed="yes"/>
+<instance part="FD3" gate="G$1" x="231.14" y="27.94" smashed="yes"/>
+<instance part="FD4" gate="G$1" x="228.6" y="27.94" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -7118,22 +7157,10 @@ I2C Pull-ups from bus</text>
 <wire x1="30.48" y1="162.56" x2="30.48" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="35.56" y1="40.64" x2="33.02" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
-<wire x1="33.02" y1="40.64" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="J3" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="40.64" x2="78.74" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="30.48" x2="116.84" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
-<wire x1="78.74" y1="40.64" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="35.56" y1="15.24" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
-<wire x1="33.02" y1="15.24" x2="33.02" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="30.48" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
@@ -7153,14 +7180,14 @@ I2C Pull-ups from bus</text>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="2"/>
-<wire x1="127" y1="15.24" x2="129.54" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="15.24" x2="129.54" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="30.48" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="30.48" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="2"/>
-<wire x1="91.44" y1="15.24" x2="88.9" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="15.24" x2="91.44" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="30.48" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="30.48" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
@@ -7184,21 +7211,9 @@ I2C Pull-ups from bus</text>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="38.1" x2="78.74" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="27.94" x2="116.84" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="78.74" y1="38.1" x2="78.74" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="33.02" y1="35.56" x2="33.02" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="38.1" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="33.02" y1="10.16" x2="33.02" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="12.7" x2="35.56" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="27.94" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="96.52" x2="99.06" y2="96.52" width="0.1524" layer="91"/>
@@ -7208,32 +7223,22 @@ I2C Pull-ups from bus</text>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="12.7" x2="91.44" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="12.7" x2="91.44" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="27.94" x2="35.56" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="27.94" x2="35.56" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="1"/>
-<wire x1="127" y1="12.7" x2="129.54" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="12.7" x2="129.54" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="27.94" x2="73.66" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="27.94" x2="73.66" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="35.56" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
-<label x="30.48" y="43.18" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J3" gate="G$1" pin="3"/>
-<wire x1="81.28" y1="43.18" x2="76.2" y2="43.18" width="0.1524" layer="91"/>
-<label x="76.2" y="43.18" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="3"/>
-<wire x1="35.56" y1="17.78" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
-<label x="30.48" y="17.78" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="119.38" y1="33.02" x2="114.3" y2="33.02" width="0.1524" layer="91"/>
+<label x="114.3" y="33.02" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="SDA"/>
@@ -7246,30 +7251,20 @@ I2C Pull-ups from bus</text>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="3"/>
-<wire x1="88.9" y1="17.78" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
-<label x="93.98" y="17.78" size="1.27" layer="95" xref="yes"/>
+<wire x1="33.02" y1="33.02" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
+<label x="38.1" y="33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="3"/>
-<wire x1="127" y1="17.78" x2="132.08" y2="17.78" width="0.1524" layer="91"/>
-<label x="132.08" y="17.78" size="1.27" layer="95" xref="yes"/>
+<wire x1="71.12" y1="33.02" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
+<label x="76.2" y="33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="35.56" y1="45.72" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
-<label x="30.48" y="45.72" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J3" gate="G$1" pin="4"/>
-<wire x1="81.28" y1="45.72" x2="76.2" y2="45.72" width="0.1524" layer="91"/>
-<label x="76.2" y="45.72" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="4"/>
-<wire x1="35.56" y1="20.32" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
-<label x="30.48" y="20.32" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="119.38" y1="35.56" x2="114.3" y2="35.56" width="0.1524" layer="91"/>
+<label x="114.3" y="35.56" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="SCL"/>
@@ -7282,13 +7277,13 @@ I2C Pull-ups from bus</text>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="4"/>
-<wire x1="88.9" y1="20.32" x2="93.98" y2="20.32" width="0.1524" layer="91"/>
-<label x="93.98" y="20.32" size="1.27" layer="95" xref="yes"/>
+<wire x1="33.02" y1="35.56" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
+<label x="38.1" y="35.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="4"/>
-<wire x1="127" y1="20.32" x2="132.08" y2="20.32" width="0.1524" layer="91"/>
-<label x="132.08" y="20.32" size="1.27" layer="95" xref="yes"/>
+<wire x1="71.12" y1="35.56" x2="76.2" y2="35.56" width="0.1524" layer="91"/>
+<label x="76.2" y="35.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DIG_1A" class="0">
