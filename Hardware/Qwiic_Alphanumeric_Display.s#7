@@ -4739,14 +4739,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-1.125" y1="4" x2="-1.125" y2="-4" width="0.03" layer="51"/>
 <circle x="0" y="-4" radius="1.125" width="0.03" layer="51"/>
 <circle x="0" y="4" radius="1.125" width="0.03" layer="51"/>
-<wire x1="1.15" y1="1.95" x2="1.15" y2="-1.95" width="0.03" layer="20" curve="-118.151107"/>
-<wire x1="1.15" y1="1.95" x2="1.15" y2="4" width="0.03" layer="20"/>
-<wire x1="1.15" y1="4" x2="-1.15" y2="4" width="0.03" layer="20" curve="180"/>
-<wire x1="-1.15" y1="4" x2="-1.15" y2="1.95" width="0.03" layer="20"/>
-<wire x1="-1.15" y1="-1.95" x2="-1.15" y2="1.95" width="0.03" layer="20" curve="-118.151107"/>
-<wire x1="-1.15" y1="-1.95" x2="-1.15" y2="-4" width="0.03" layer="20"/>
-<wire x1="-1.15" y1="-4" x2="1.15" y2="-4" width="0.03" layer="20" curve="180"/>
-<wire x1="1.15" y1="-4" x2="1.15" y2="-1.95" width="0.03" layer="20"/>
+<wire x1="1.15" y1="1.95" x2="1.15" y2="-1.95" width="0.2032" layer="20" curve="-118.151107"/>
+<wire x1="1.15" y1="1.95" x2="1.15" y2="4" width="0.2032" layer="20"/>
+<wire x1="1.15" y1="4" x2="-1.15" y2="4" width="0.2032" layer="20" curve="180"/>
+<wire x1="-1.15" y1="4" x2="-1.15" y2="1.95" width="0.2032" layer="20"/>
+<wire x1="-1.15" y1="-1.95" x2="-1.15" y2="1.95" width="0.2032" layer="20" curve="-118.151107"/>
+<wire x1="-1.15" y1="-1.95" x2="-1.15" y2="-4" width="0.2032" layer="20"/>
+<wire x1="-1.15" y1="-4" x2="1.15" y2="-4" width="0.2032" layer="20" curve="180"/>
+<wire x1="1.15" y1="-4" x2="1.15" y2="-1.95" width="0.2032" layer="20"/>
 <text x="0" y="0" size="0.5" layer="20" align="center">Route
 Out</text>
 </package>
@@ -7275,8 +7275,8 @@ I2C Pull-ups from bus</text>
 <attribute name="NAME" x="104.14" y="149.86" size="1.778" layer="95"/>
 <attribute name="VALUE" x="104.14" y="91.44" size="1.778" layer="96"/>
 </instance>
-<instance part="U$18" gate="G$1" x="223.52" y="27.94" smashed="yes"/>
-<instance part="U$19" gate="G$1" x="218.44" y="27.94" smashed="yes"/>
+<instance part="U$18" gate="G$1" x="223.52" y="30.48" smashed="yes"/>
+<instance part="U$19" gate="G$1" x="218.44" y="30.48" smashed="yes"/>
 </instances>
 <busses>
 </busses>

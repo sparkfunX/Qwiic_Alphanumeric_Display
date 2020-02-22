@@ -834,20 +834,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
-<library name="SparkFun">
-<packages>
-<package name="STAND-OFF">
-<description>&lt;b&gt;Stand Off&lt;/b&gt;&lt;p&gt;
-This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components. SKU : PRT-00447</description>
-<wire x1="0" y1="1.8542" x2="0" y2="-1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="-180"/>
-<circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
-<hole x="0" y="0" drill="3.302"/>
-</package>
-</packages>
-</library>
 <library name="SparkFun-Resistors">
 <description>&lt;h3&gt;SparkFun Resistors&lt;/h3&gt;
 This library contains resistors. Reference designator:R. 
@@ -3231,8 +3217,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="J3" library="SparkFun-Connectors" package="1X04_NO_SILK" value="" x="29.21" y="11.43" smashed="yes" rot="R90">
 <attribute name="VALUE" x="31.242" y="10.16" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
-<element name="JP1" library="SparkFun" package="STAND-OFF" value="STAND-OFF" x="2.54" y="3.81" smashed="yes" rot="MR0"/>
-<element name="JP8" library="SparkFun" package="STAND-OFF" value="STAND-OFF" x="38.1" y="26.67" smashed="yes"/>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-MINI" value="OSHW-LOGOMINI" x="34.29" y="3.81" smashed="yes"/>
 <element name="R1" library="SparkFun-Resistors" package="0603" value="1k" x="3.81" y="12.065" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="RES-07856" x="-40.64" y="76.835" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3245,8 +3229,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </element>
 <element name="U$3" library="buzzard_labels" package="PWR5" value="" x="1.27" y="11.303" smashed="yes" rot="R90"/>
 <element name="U$10" library="Labels" package="I_SUPER2_C-()-04" value="" x="9.906" y="9.652" smashed="yes" rot="R90"/>
-<element name="U$12" library="SparkX" package="SPARKX-MEDIUM" value="" x="9.906" y="26.289" smashed="yes"/>
-<element name="U$14" library="SparkX" package="SPARKX-MEDIUM" value="" x="30.48" y="26.289" smashed="yes" rot="MR0"/>
 <element name="U$15" library="buzzard_labels (4)" package="QWIIC_ALPHANUMERIC0" value="" x="15.24" y="27.178" smashed="yes"/>
 <element name="U$16" library="buzzard_labels (4)" package="DISPLAY1" value="" x="21.59" y="25.273" smashed="yes"/>
 <element name="U$13" library="buzzard_labels (4)" package="QWIIC_ALPHANUMERIC0" value="" x="24.638" y="27.178" smashed="yes" rot="MR0"/>
@@ -3317,6 +3299,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$2" library="buzzard_labels (65)" package="C0" value="" x="29.591" y="19.05" smashed="yes"/>
 <element name="U$4" library="buzzard_labels (65)" package="D1" value="" x="29.591" y="17.653" smashed="yes"/>
 <element name="U$5" library="buzzard_labels (65)" package="G3" value="" x="29.464" y="11.43" smashed="yes"/>
+<element name="U$7" library="SparkX" package="SPARKX-MEDIUM" value="SPARKX-LOGO4" x="10.16" y="26.67" smashed="yes"/>
+<element name="U$8" library="SparkX" package="SPARKX-MEDIUM" value="SPARKX-LOGO4" x="30.48" y="26.67" smashed="yes" rot="MR0"/>
+<element name="H3" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="2.54" y="3.81" smashed="yes">
+<attribute name="NAME" x="2.54" y="5.842" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="VALUE" x="2.54" y="1.778" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="H4" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="38.1" y="26.67" smashed="yes">
+<attribute name="NAME" x="38.1" y="28.702" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="VALUE" x="38.1" y="24.638" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
 </elements>
 <signals>
 <signal name="3.3V">
@@ -3676,12 +3668,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="7,39,18227d88ff7be33a"/>
-<approved hash="7,39,057b32b0d0c19ee1"/>
-<approved hash="7,39,18e47deb7f18623c"/>
-<approved hash="7,39,78267807aaffaade"/>
-<approved hash="7,39,04b633d850691f2c"/>
-<approved hash="7,39,382638062afe2ade"/>
 <approved hash="19,1,15a2c3013b30ef71"/>
 <approved hash="19,1,3d7bf1380b09c5a8"/>
 <approved hash="19,1,4340df032532bb93"/>
@@ -3692,6 +3678,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <approved hash="19,1,4e51488050825653"/>
 <approved hash="19,1,5b37594d1c2318d5"/>
 <approved hash="19,1,239da13e590fd94e"/>
+<approved hash="7,39,846a30de934bdfe1"/>
+<approved hash="7,39,38043896aa6eaafc"/>
+<approved hash="7,39,98c4fe113cf3a238"/>
+<approved hash="7,39,987dc13683dd22b3"/>
+<approved hash="7,39,780478972a6f2afc"/>
+<approved hash="7,39,84af0f852c225f2d"/>
 </errors>
 </board>
 </drawing>
