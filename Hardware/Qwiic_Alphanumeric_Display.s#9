@@ -4733,6 +4733,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-7.75" y="5.6" size="1.778" layer="25">&gt;NAME</text>
 <text x="-7.7" y="-7.4" size="1.778" layer="27">&gt;VALUE</text>
 </package>
+<package name="MOUNTING_HOLE_M2-0.4X6">
+<circle x="0" y="0" radius="2.25" width="0.03" layer="51"/>
+<wire x1="1.125" y1="-4" x2="1.125" y2="4" width="0.03" layer="51"/>
+<wire x1="-1.125" y1="4" x2="-1.125" y2="-4" width="0.03" layer="51"/>
+<circle x="0" y="-4" radius="1.125" width="0.03" layer="51"/>
+<circle x="0" y="4" radius="1.125" width="0.03" layer="51"/>
+<wire x1="1.15" y1="1.95" x2="1.15" y2="-1.95" width="0.03" layer="20" curve="-118.151107"/>
+<wire x1="1.15" y1="1.95" x2="1.15" y2="4" width="0.03" layer="20"/>
+<wire x1="1.15" y1="4" x2="-1.15" y2="4" width="0.03" layer="20" curve="180"/>
+<wire x1="-1.15" y1="4" x2="-1.15" y2="1.95" width="0.03" layer="20"/>
+<wire x1="-1.15" y1="-1.95" x2="-1.15" y2="1.95" width="0.03" layer="20" curve="-118.151107"/>
+<wire x1="-1.15" y1="-1.95" x2="-1.15" y2="-4" width="0.03" layer="20"/>
+<wire x1="-1.15" y1="-4" x2="1.15" y2="-4" width="0.03" layer="20" curve="180"/>
+<wire x1="1.15" y1="-4" x2="1.15" y2="-1.95" width="0.03" layer="20"/>
+<text x="0" y="0" size="0.5" layer="20" align="center">Route
+Out</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SILSMART_DISPLAY">
@@ -5098,6 +5115,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-12.7" y="27.94" size="1.778" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-30.48" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="MOUNTING_HOLE_M2-0.4X6">
+<wire x1="0.762" y1="1.778" x2="0.762" y2="-1.778" width="0.254" layer="94" curve="-133.602819"/>
+<wire x1="0.762" y1="1.778" x2="0.762" y2="3.302" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="3.302" x2="-0.762" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0.762" y1="3.302" x2="-0.762" y2="3.302" width="0.254" layer="94" curve="180"/>
+<wire x1="-0.762" y1="-1.778" x2="-0.762" y2="1.778" width="0.254" layer="94" curve="-133.602819"/>
+<wire x1="-0.762" y1="-1.778" x2="-0.762" y2="-3.302" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-3.302" x2="0.762" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-3.302" x2="0.762" y2="-3.302" width="0.254" layer="94" curve="180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SILSMART_DISPLAY" prefix="U" uservalue="yes">
@@ -5165,6 +5192,18 @@ LED Controller Driver with Keyscan</description>
 <connect gate="G$1" pin="VDD" pad="24"/>
 <connect gate="G$1" pin="VSS" pad="1"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOUNTING_HOLE_M2-0.4X6">
+<gates>
+<gate name="G$1" symbol="MOUNTING_HOLE_M2-0.4X6" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MOUNTING_HOLE_M2-0.4X6">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7103,6 +7142,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="H1" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="H2" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="IC1" library="Alphanumeric_Display_Library" deviceset="HT16K33" device=""/>
+<part name="U$18" library="Alphanumeric_Display_Library" deviceset="MOUNTING_HOLE_M2-0.4X6" device=""/>
+<part name="U$19" library="Alphanumeric_Display_Library" deviceset="MOUNTING_HOLE_M2-0.4X6" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7234,6 +7275,8 @@ I2C Pull-ups from bus</text>
 <attribute name="NAME" x="104.14" y="149.86" size="1.778" layer="95"/>
 <attribute name="VALUE" x="104.14" y="91.44" size="1.778" layer="96"/>
 </instance>
+<instance part="U$18" gate="G$1" x="223.52" y="27.94" smashed="yes"/>
+<instance part="U$19" gate="G$1" x="218.44" y="27.94" smashed="yes"/>
 </instances>
 <busses>
 </busses>
