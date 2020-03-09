@@ -8622,7 +8622,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="FD2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="FD3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="FD4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
-<part name="U1" library="Alphanumeric_Display_Library" deviceset="SILSMART_DISPLAY" device=""/>
+<part name="U1" library="Alphanumeric_Display_Library" deviceset="SILSMART_DISPLAY" device="">
+<attribute name="PROD_ID" value="COMP-14892"/>
+</part>
 <part name="H1" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="H2" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="IC1" library="Alphanumeric_Display_Library" deviceset="HT16K33" device="">
@@ -8786,6 +8788,7 @@ Connected to AD = 1</text>
 <instance part="U1" gate="G$1" x="205.74" y="99.06" smashed="yes">
 <attribute name="NAME" x="177.8" y="86.36" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="236.22" y="86.36" size="1.778" layer="96" rot="R90"/>
+<attribute name="PROD_ID" x="205.74" y="99.06" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="H1" gate="G$1" x="243.84" y="30.48" smashed="yes"/>
 <instance part="H2" gate="G$1" x="243.84" y="27.94" smashed="yes"/>

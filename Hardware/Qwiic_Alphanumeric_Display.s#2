@@ -8675,6 +8675,7 @@ Connected to AD = 1</text>
 <wire x1="199.898" y1="135.89" x2="226.06" y2="135.89" width="0.2032" layer="97"/>
 <wire x1="192.532" y1="160.02" x2="192.532" y2="135.636" width="0.2032" layer="97"/>
 <wire x1="199.898" y1="160.02" x2="199.898" y2="135.89" width="0.2032" layer="97"/>
+<text x="238.76" y="7.62" size="2.54" layer="94">X02</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>

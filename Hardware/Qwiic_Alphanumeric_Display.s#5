@@ -6357,56 +6357,6 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun">
-<packages>
-<package name="STAND-OFF">
-<description>&lt;b&gt;Stand Off&lt;/b&gt;&lt;p&gt;
-This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components. SKU : PRT-00447</description>
-<wire x1="0" y1="1.8542" x2="0" y2="-1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="-180"/>
-<circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
-<hole x="0" y="0" drill="3.302"/>
-</package>
-<package name="STAND-OFF-TIGHT">
-<description>&lt;b&gt;Stand Off&lt;/b&gt;&lt;p&gt;
-This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components. SKU : PRT-00447</description>
-<wire x1="0" y1="1.8542" x2="0" y2="-1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="-180"/>
-<circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
-<hole x="0" y="0" drill="3.048"/>
-</package>
-</packages>
-<symbols>
-<symbol name="STAND-OFF">
-<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="STAND-OFF" prefix="JP">
-<description>&lt;b&gt;Stand Off&lt;/b&gt;&lt;p&gt;
-This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components. SKU : PRT-00447</description>
-<gates>
-<gate name="G$1" symbol="STAND-OFF" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="STAND-OFF">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TIGHT" package="STAND-OFF-TIGHT">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-PowerSymbols" urn="urn:adsk.eagle:library:530">
 <description>&lt;h3&gt;SparkFun Power Symbols&lt;/h3&gt;
 This library contains power, ground, and voltage-supply symbols.
@@ -8650,8 +8600,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="MINI"/>
-<part name="JP8" library="SparkFun" deviceset="STAND-OFF" device=""/>
-<part name="JP1" library="SparkFun" deviceset="STAND-OFF" device=""/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="R4" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
@@ -8682,6 +8630,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$19" library="Alphanumeric_Display_Library" deviceset="MOUNTING_HOLE_M2-0.4X6" device=""/>
 <part name="U$7" library="SparkX" deviceset="SPARKX-LOGO" device="4" value="SPARKX-LOGO4"/>
 <part name="U$8" library="SparkX" deviceset="SPARKX-LOGO" device="4" value="SPARKX-LOGO4"/>
+<part name="H3" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
+<part name="H4" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8766,8 +8716,6 @@ Connected to AD = 1</text>
 <attribute name="VALUE" x="116.84" y="22.606" size="1.778" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="LOGO1" gate="G$1" x="228.6" y="45.72" smashed="yes"/>
-<instance part="JP8" gate="G$1" x="246.38" y="30.48" smashed="yes"/>
-<instance part="JP1" gate="G$1" x="246.38" y="27.94" smashed="yes"/>
 <instance part="GND6" gate="1" x="99.06" y="91.44" smashed="yes">
 <attribute name="VALUE" x="99.06" y="91.186" size="1.778" layer="96" align="top-center"/>
 </instance>
@@ -8847,6 +8795,8 @@ Connected to AD = 1</text>
 <instance part="U$19" gate="G$1" x="218.44" y="30.48" smashed="yes"/>
 <instance part="U$7" gate="G$1" x="187.96" y="45.72" smashed="yes"/>
 <instance part="U$8" gate="G$1" x="187.96" y="53.34" smashed="yes"/>
+<instance part="H3" gate="G$1" x="246.38" y="30.48" smashed="yes"/>
+<instance part="H4" gate="G$1" x="246.38" y="27.94" smashed="yes"/>
 </instances>
 <busses>
 </busses>
