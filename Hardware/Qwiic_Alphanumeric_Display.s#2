@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -8606,8 +8606,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R5" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="I2C" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_2-NC_TRACE" device="_SILK" value="JUMPER-SMT_3_2-NC_TRACE_SILK"/>
-<part name="JP2" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
-<part name="JP3" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
+<part name="A1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
+<part name="A0" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="39KOHM" device="-0603-1/10W-1%" value="39k"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="39KOHM" device="-0603-1/10W-1%" value="39k"/>
 <part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="-BAS16J" value="250mA/100V"/>
@@ -8741,11 +8741,11 @@ Connected to AD = 1</text>
 <instance part="I2C" gate="G$1" x="86.36" y="144.78" smashed="yes" rot="R270">
 <attribute name="NAME" x="87.884" y="142.748" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="JP2" gate="G$1" x="134.62" y="154.94" smashed="yes" rot="R90">
-<attribute name="NAME" x="132.08" y="152.4" size="1.778" layer="95" font="vector" rot="R90"/>
+<instance part="A1" gate="G$1" x="134.62" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="132.588" y="153.67" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
-<instance part="JP3" gate="G$1" x="142.24" y="154.94" smashed="yes" rot="R90">
-<attribute name="NAME" x="139.7" y="152.4" size="1.778" layer="95" font="vector" rot="R90"/>
+<instance part="A0" gate="G$1" x="142.24" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="140.208" y="153.67" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
 <instance part="R2" gate="G$1" x="134.62" y="167.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="133.096" y="167.64" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -8953,7 +8953,7 @@ Connected to AD = 1</text>
 <segment>
 <wire x1="132.08" y1="147.32" x2="134.62" y2="147.32" width="0.1524" layer="91"/>
 <label x="144.78" y="147.32" size="1.27" layer="95" xref="yes"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="A1" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="147.32" x2="144.78" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="149.86" x2="134.62" y2="147.32" width="0.1524" layer="91"/>
 <junction x="134.62" y="147.32"/>
@@ -8981,7 +8981,7 @@ Connected to AD = 1</text>
 <segment>
 <wire x1="132.08" y1="144.78" x2="142.24" y2="144.78" width="0.1524" layer="91"/>
 <label x="144.78" y="144.78" size="1.27" layer="95" xref="yes"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
+<pinref part="A0" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="144.78" x2="144.78" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="144.78" x2="142.24" y2="149.86" width="0.1524" layer="91"/>
 <junction x="142.24" y="144.78"/>
@@ -9168,14 +9168,14 @@ Connected to AD = 1</text>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="2"/>
+<pinref part="A1" gate="G$1" pin="2"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="160.02" x2="134.62" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="JP3" gate="G$1" pin="2"/>
+<pinref part="A0" gate="G$1" pin="2"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="160.02" x2="142.24" y2="162.56" width="0.1524" layer="91"/>
 </segment>
