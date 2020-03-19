@@ -1,11 +1,26 @@
 SparkX Qwiic Alphanumeric Display
 ========================================
 
-[![SparkX High Precision Temperature Sensor - TMP117]()]() 
+[![Qwiic Alphanumeric Display - Red](https://cdn.sparkfun.com/assets/parts/1/5/1/8/3/16427-Demo-01.jpg)](https://cdn.sparkfun.com/assets/parts/1/5/1/8/3/16427-Demo-01.jpg)
 
-[*Alphanumeric Display (Qwiic) (SPX-)*]()
+[*Qwiic Alphanumeric Display - Red (SPX-16427)*](https://www.sparkfun.com/products/16427)
 
-The SparkFun Qwiic Alphanumeric Display is a 14-segment, 4 digit alphanumeric display with the Holtek HT16K33 LED Driver that allows you for control every segment individually through an I2C bus. 
+[![Qwiic Alphanumeric Display - Blue](https://cdn.sparkfun.com/assets/parts/1/5/1/8/2/16426-Demo-01.jpg)](https://cdn.sparkfun.com/assets/parts/1/5/1/8/2/16426-Demo-01.jpg)
+
+[*Qwiic Alphanumeric Display - Blue (SPX-16426)*](https://www.sparkfun.com/products/16426)
+
+[![Qwiic Alphanumeric Display - Purple](https://cdn.sparkfun.com/assets/parts/1/5/1/8/1/16425-Demo-01.jpg)](https://cdn.sparkfun.com/assets/parts/1/5/1/8/1/16425-Demo-01.jpg)
+
+[*Qwiic Alphanumeric Display - Purple (SPX-16425)*](https://www.sparkfun.com/products/16425)
+
+[![Qwiic Alphanumeric Display - Pink](https://cdn.sparkfun.com/assets/parts/1/5/1/1/2/16391-Demo-01.jpg)](https://cdn.sparkfun.com/assets/parts/1/5/1/1/2/16391-Demo-01.jpg)
+
+[*Qwiic Alphanumeric Display - Pink (SPX-16391)*](https://www.sparkfun.com/products/16391)
+
+The SparkFun Qwiic Alphanumeric Display is a 14-segment, 4 digit alphanumeric display with the Hotlek HT16K33 LED Driver. The I2C address is configurable, so daisy-chain up to 4 displays on one bus! Looking for the library? Click [*here*](https://github.com/sparkfun/SparkFun_Alphanumeric_Display_Arduino_Library)
+
+SparkFun labored with love to design this board. Feel like supporting open source hardware? 
+Buy a [board]() from SparkFun!
 
 Repository Contents
 -------------------
